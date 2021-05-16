@@ -11,7 +11,7 @@ import {useState} from 'react';
 //   enteredDate:'',
 //   enteredAmount:''
 // });
-
+//when we depend on previous state then use the way below
 
   const titleChangeHandler=(event)=>{
     //console.log(event.target.value);
@@ -20,6 +20,11 @@ import {useState} from 'react';
     //   ...userInput,
     //   enteredTitle:event.target.value,
     // })
+
+    // setUserInput((prevState) =>{
+    //   return {...prevState,enteredTitle:event.target.value};
+    // });
+
   };
   const amountChangeHandler=(event)=>{
     setEnteredAmount(event.target.value);
